@@ -17,7 +17,6 @@ class solution:
         while(left<=right):
             
             mid = (left+right)//2
-            
             if(array[mid]!=array[mid+1] and array[mid]!=array[mid-1]):return array[mid]
             
             #left half element in right half so eliminate left half 
