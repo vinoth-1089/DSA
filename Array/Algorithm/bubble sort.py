@@ -1,19 +1,14 @@
-n=[1,3,5,26,4]
-for i in range(0,len(n)-1):
-    for j in range(0,len(n)-1):
-        if n[j]>n[j+1]:
-            n[j],n[j+1]=n[j+1],n[j]
-print(n)
+def bubble_sort(arr):
+    n = len(arr)
+    # Traverse through all elements in the list
+    for i in range(n):
+        # Last i elements are already sorted
+        for j in range(0, n - i - 1):
+            # Swap if the current element is greater than the next
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
-print("-------------------------------------")
-
-# n=[1,3,5,26,4]
-# while(True):
-#     a=True
-#     for j in range(0,len(n)-1):
-#         if n[j]>n[j+1]:
-#             n[j],n[j+1]=n[j+1],n[j]
-#         a=False
-#     if a==True:
-#         break
-# print(n)
+# Example usage
+arr = [64, 34, 25, 12, 22, 11, 90]
+bubble_sort(arr)
+print("Sorted array is:", arr)

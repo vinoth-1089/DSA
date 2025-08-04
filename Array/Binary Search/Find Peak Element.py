@@ -5,7 +5,6 @@ class solution:
         n=len(array)
         
         if(n==1):return array[0]
-        
         if (array[0]>array[1]):return array[0]
         
         if (array[n-1]>array[n-2]):return array[n-1]

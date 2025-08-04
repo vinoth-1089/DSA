@@ -6,6 +6,9 @@ class solution():
                     array[i],array[j]=array[j],array[i]
         return array
 array=[23,4,56,78,98]
+print("Before Sorted:")
 n=len(array)
 obj=solution()
-print(obj.selection_sort(array,n))        
+result=obj.selection_sort(array,n)
+print("After Sorted:")
+print(result)

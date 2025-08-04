@@ -9,9 +9,13 @@ class solution():
             array[j+1]=current_value
         return array
 array=[67,34,69,58,45]
+print("Before Sorted:")
+print(array)
 n=len(array)
 obj=solution()
-print(obj.inertion_sort(array,n))  
+result=obj.inertion_sort(array,n)
+print("After Sorted:")  
+print(result)
 
 
                 
