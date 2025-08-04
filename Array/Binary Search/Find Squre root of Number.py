@@ -9,7 +9,7 @@ class solution():
         while (low<=high):
             mid=(low+high)//2
             
-            squre=mid*mid
+            squre=mid*mid 
             if squre==n:
                 return mid
             elif squre<n:
