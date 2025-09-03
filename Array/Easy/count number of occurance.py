@@ -1,5 +1,5 @@
-arr=[int(i) for i in input("Enter the value:").split(",")]
-target=int(input("enter the target:"))
+arr=[1,1,1,1,2,22,3,4,5]
+target=1
 c=0
 for i in arr:
     if i==target:
